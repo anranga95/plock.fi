@@ -5,6 +5,7 @@ module.exports = withPWA({
     dest: 'public',
   },
   target: 'serverless',
+  webpack5: false,
   webpack: (config, { webpack }) => {
     config.node = {
       fs: 'empty',
