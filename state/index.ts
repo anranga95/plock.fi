@@ -4,7 +4,6 @@ import { Address, eqAddress } from '@celo/base';
 import { PendingWithdrawal } from '@celo/contractkit/lib/wrappers/LockedGold';
 import { AddressUtils } from '@celo/utils';
 import BigNumber from 'bignumber.js';
-import { totalmem } from 'node:os';
 import { useCallback, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { createContainer } from 'unstated-next';
