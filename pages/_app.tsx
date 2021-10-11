@@ -40,23 +40,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
           
         <script async src="/dark-mode.js" />
-
-        {process.browser && (
-          <>
-            <script
-              async
-              defer
-              data-domain="app.plock.fi"
-              src="https://stats.app.plock.fi/js/index.js"
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html:
-                  'window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }',
-              }}
-            ></script>
-          </>
-        )}
       </Head>
 
       <div suppressHydrationWarning>
