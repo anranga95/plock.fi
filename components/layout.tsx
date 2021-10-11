@@ -240,7 +240,7 @@ const tabs: SidebarOption[] = [
 export function WithAppLayout({ children }) {
   const menuRef = useRef(null);
   const { settings } = Base.useContainer();
-  const { network, address, destroy, connect, connectionCallback } =
+  const { network, address, destroy, connect } =
     useContractKit();
   const [healthy, setHealthy] = useState(true);
   const [menu, setMenu] = useState(false);
@@ -305,7 +305,7 @@ export function WithAppLayout({ children }) {
         }}
       />
 
-      {!address && !connectionCallback && (
+      {!address && (
         <div className="md:hidden rounded-full fixed right-6 bottom-6 z-50 overflow-hidden">
           <button className="primary-button" onClick={connect}>
             Connect
@@ -536,12 +536,17 @@ function WithSidebar({ children }: any) {
   );
 }
 
+const dAppConfig = {
+  name: 'Plock',
+  description: 'Gateway to DeFi on Celo.',
+  url: 'https://plock-fi.vercel.app',
+  networks: [Mainnet, Alfajores, Baklava],
+  icon: 'logo.png'
+}
+
 export const WithLayout = ({ children }: any) => (
   <ContractKitProvider
-    dappName="Plock"
-    dappDescription="The DeFi dashboard for Celo"
-    dappUrl="https://plock.fi"
-    networks={[Mainnet, Alfajores, Baklava]}
+    dapp={dAppConfig}
   >
     <Base.Provider>
       <WithApollo>
