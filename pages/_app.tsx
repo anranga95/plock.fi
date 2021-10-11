@@ -23,7 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta name="description" content="Description" />
         <meta name="keywords" content="Keywords" />
-        <title>Next.js PWA Example</title>
 
         <link rel="manifest" href="/manifest.json" />
         <link
@@ -38,8 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           type="image/png"
           sizes="32x32"
         />
-        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
-        <meta name="theme-color" content="#317EFB" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
           
         <script async src="/dark-mode.js" />
 
