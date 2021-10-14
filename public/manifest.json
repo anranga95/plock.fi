@@ -1,10 +1,15 @@
 {
-    "theme_color": "#f69435",
-    "background_color": "#f69435",
+    "theme_color": "#949BA0",
+    "background_color": "#9DACB2",
     "orientation": "portrait",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
+    "scope_url": "https://plock-fi.vercel.app/",
+    "start_url": "https://plock-fi.vercel.app/",
+    "intent_filters": {
+        "scope_url_scheme": "https",
+        "scope_url_host": "plock-fi.vercel.app",
+        "scope_url_path": "/"
+      },
     "name": "Plock Finance",
     "short_name": "Plock.fi",
     "icons": [
