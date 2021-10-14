@@ -3,7 +3,7 @@ import BigNumber from 'bignumber.js';
 import QRCode from 'qrcode.react';
 import { InputHTMLAttributes, useState } from 'react';
 if (typeof window != 'undefined') {
-  var QrReader = require('react-qr-reader');
+  // var QrReader = require('react-qr-reader');
 }
 import Web3 from 'web3';
 import { toast } from '.';
@@ -60,13 +60,13 @@ export function AddressInput(
         </Modal>
       )}
 
-      {qrInputModal && (
+      {/* {qrInputModal && (
         <Modal onDismiss={() => setQrInputModal(false)}>
           <div className="w-48 w-48 md:h-96 md:w-96">
             <QrReader delay={300} onError={handleError} onScan={handleScan} />
           </div>
         </Modal>
-      )}
+      )} */}
 
       <div className="flex flex-row space-x-4 items-center">
         <Input
